@@ -1,0 +1,124 @@
+
+CachePilot/
+│
+├── app.py
+├── requirements.txt
+├── .env
+├── .env.example
+├── .gitignore
+├── README.md
+│
+├── config/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── model_config.yaml
+│   └── pricing_config.yaml
+│
+├── frontend/
+│   ├── __init__.py
+│   ├── dashboard.py
+│   ├── playground.py
+│   ├── cache_analytics.py
+│   ├── routing_analytics.py
+│   ├── conversation_view.py
+│   └── experiments.py
+│
+├── backend/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── schemas.py
+│   ├── dependencies.py
+│   │
+│   └── routes/
+│       ├── __init__.py
+│       ├── chat.py
+│       ├── analytics.py
+│       ├── cache.py
+│       └── experiments.py
+│
+├── core/
+│   ├── __init__.py
+│   ├── orchestrator.py
+│   ├── request_manager.py
+│   └── response_manager.py
+│
+├── caching/
+│   ├── __init__.py
+│   ├── exact_cache.py
+│   ├── semantic_cache.py
+│   ├── prompt_cache.py
+│   ├── tool_cache.py
+│   ├── cache_manager.py
+│   └── cache_invalidation.py
+│
+├── context/
+│   ├── __init__.py
+│   ├── history_manager.py
+│   ├── context_trimmer.py
+│   ├── summarizer.py
+│   └── token_counter.py
+│
+├── routing/
+│   ├── __init__.py
+│   ├── complexity_analyzer.py
+│   ├── feature_extractor.py
+│   ├── router.py
+│   ├── model_selector.py
+│   ├── escalation.py
+│   └── models/
+│       └── .gitkeep
+│
+├── providers/
+│   ├── __init__.py
+│   ├── base_provider.py
+│   ├── litellm_provider.py
+│   ├── openai_provider.py
+│   ├── anthropic_provider.py
+│   └── local_provider.py
+│
+├── agents/
+│   ├── __init__.py
+│   ├── agent.py
+│   ├── tool_registry.py
+│   └── tool_executor.py
+│
+├── telemetry/
+│   ├── __init__.py
+│   ├── logger.py
+│   ├── token_tracker.py
+│   ├── cost_calculator.py
+│   ├── latency_tracker.py
+│   └── metrics.py
+│
+├── database/
+│   ├── __init__.py
+│   ├── connection.py
+│   ├── models.py
+│   └── repository.py
+│
+├── evaluation/
+│   ├── __init__.py
+│   ├── datasets.py
+│   ├── benchmark.py
+│   ├── quality_evaluator.py
+│   ├── cost_evaluator.py
+│   └── report_generator.py
+│
+├── experiments/
+│   ├── configs/
+│   ├── results/
+│   └── notebooks/
+│
+├── tests/
+│   ├── test_exact_cache.py
+│   ├── test_semantic_cache.py
+│   ├── test_context_manager.py
+│   ├── test_router.py
+│   ├── test_providers.py
+│   └── test_orchestrator.py
+│
+└── data/
+    ├── cache/
+    ├── embeddings/
+    ├── logs/
+    └── cachepilot.db
